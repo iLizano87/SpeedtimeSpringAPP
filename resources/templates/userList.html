@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User List</title>
+</head>
+<body>
+<h1>Listado Usuarios</h1>
+	<table>
+		<tr th:each="user: ${list}">
+			<td th:text="${user.id}" />
+			<td th:text="${user.nick}" />
+	</table>
+</body>
+</html>
